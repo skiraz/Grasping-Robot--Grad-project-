@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="coke_can">
+
+  <link name="link">
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.115" radius="0.03"/>
+      </geometry>
+    </collision>
+    <contact>
+      <rolling_friction value="0.03"/>
+      <spinning_friction value="0.03"/>
+      <lateral_friction value="3.0"/>
+      <stiffness value="300"/>
+      <damping value="50"/>
+    </contact>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <cylinder length="0.115" radius="0.03"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

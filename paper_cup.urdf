@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot name="cup">
+
+  <link name="base_link">
+  <inertial>
+    <mass value="0.5"/>
+    <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </inertial>
+     <contact>
+      <rolling_friction value="0.03"/>
+      <spinning_friction value="0.03"/>
+      <lateral_friction value="3.0"/>
+      <stiffness value="300"/>
+      <damping value="50"/>
+    </contact>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="D:\projects\graduation project\qi bullet simulation\cup-006-obj\cup-006.obj"/>
+      </geometry>
+      <material name="cup_material">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="D:\projects\graduation project\qi bullet simulation\cup-006-obj\cup-006.obj"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
